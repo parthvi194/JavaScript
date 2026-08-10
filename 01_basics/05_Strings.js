@@ -30,9 +30,9 @@ const url = "https://parthvi.com/parthvi%20modi"
 
 console.log(url.replace('%20','-'))
 
-console.log(url.includes('modi'))
-
 console.log(url.includes('-'))
+
+console.log(url.includes('modi'))
 
 console.log(gameName.split('-'))
 
