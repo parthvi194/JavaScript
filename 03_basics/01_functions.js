@@ -36,5 +36,35 @@ function loginUserMessage(username = "you are") {
 
 // console.log(loginUserMessage("Parthvi"))     // value passed (o/p -- Parthvi just logged in)
 // console.log(loginUserMessage(""))     // empty string passed (o/p --  just logged in)
-console.log(loginUserMessage())      // value not passed (o/p -- undefined just logged in)
+// console.log(loginUserMessage())      // value not passed (o/p -- undefined just logged in)
 
+
+function calculateCartprice(...num1) {          // ... - REST operator
+    return num1
+}
+
+// console.log(calculateCartprice(200, 400, 500, 900));
+
+const user ={
+    username: "Parthvi",
+    price: 199
+}
+
+function handleObject(anyobject){
+    console.log(`Username is ${anyobject.username} and price is ${anyobject.price}`);
+}
+
+// handleObject(user)
+handleObject({
+    username: "Parthvi",
+    price: 199
+})
+
+const mynewArray = [200, 400, 600, 800]
+
+function returnSecondvalue(getArray) {
+    return getArray[1]
+}
+
+// console.log(returnSecondvalue(mynewArray));
+console.log(returnSecondvalue([200, 400, 600, 800]));
