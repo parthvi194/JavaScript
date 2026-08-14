@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Events</title>
+</head>
+
+<body style="background-color: #414141; color: white;">
+
+    <h2>Amazing Images</h2>
+
+    <div>
+        <ul id="images">
+
+            <li>
+                <img
+                    width="200px"
+                    id="photoshop"
+                    src="https://images.pexels.com/photos/3561339/pexels-photo-3561339.jpeg"
+                    alt="photoshop"
+                >
+            </li>
+
+            <li>
+                <img
+                    width="200px"
+                    id="japan"
+                    src="https://images.pexels.com/photos/3532553/pexels-photo-3532553.jpeg"
+                    alt="japan"
+                >
+            </li>
+
+            <li>
+                <img
+                    width="200px"
+                    id="river"
+                    src="https://images.pexels.com/photos/3532551/pexels-photo-3532551.jpeg"
+                    alt="river"
+                >
+            </li>
+
+            <li>
+                <img
+                    width="200px"
+                    id="owl"
+                    src="https://images.pexels.com/photos/3532552/pexels-photo-3532552.jpeg"
+                    alt="owl"
+                >
+            </li>
+
+        </ul>
+    </div>
+
+</body>
+<script>
+    // document.getElementById('owl').onclick = function(){
+    //     alert("owl clicked")
+    // }
+
+    // attachEvent() also used in past
+    // jQuery - on 
+
+    // type, timestamp, defaultPrevented
+    // target, toElement, srcElement, currentTarget
+    // clinteX, clinteY, screenX, screenY
+    // altkey, ctrlkey, shiftkey, keycode
+
+    // document.getElementById('images').addEventListener('click', function (e) {
+    //     console.log("clicked inside the ul");
+    // }, false)
+
+    // document.getElementById('owl').addEventListener('click', function (e) {
+    //     console.log("owl clicked");
+    //     e.stopPropagation()
+    // }, false)
+
+    // document.getElementById('river').addEventListener('click', function (e) {
+    //     console.log("river clicked");        
+    //     e.stopPropagation()
+    //     e.preventDefault()
+    // }, false)
+
+    // document.querySelector('#images').addEventListener('click', function(e) {
+    //     console.log(e.target.parentNode);
+    //     let removeIt = e.target.parentNode
+    //     removeIt.remove()
+    //     // removeIt.parentNode.removeChild(removeIt)
+    // })
+
+</script>
+</html>
