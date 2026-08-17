@@ -8,10 +8,12 @@
 
 ## Project 1
 
-```
-JavaScript
+```javascript
+
 console.log("Parthvi)
+
 const buttons = document.querySelectorAll('.button');
+
 const body = document.querySelector('body');
 
 buttons.forEach(function (button) {
@@ -38,7 +40,7 @@ buttons.forEach(function (button) {
 
 ## project 2 solutions
 
-```
+```javascript
 
 const form = document.querySelector('form');
 
@@ -65,7 +67,7 @@ form.addEventListener('submit', function (e) {
 
 ## project 3 solutions
 
-```
+```javascript
 
 const clock = document.getElementById('clock');
 // const clock = document.querySelector('#clock')
@@ -81,7 +83,7 @@ setInterval(function () {
 
 ## project 4 solutions
 
-```
+```javascript
 
 let randomNumber = parseInt(Math.random() * 100 + 1);
 
@@ -179,7 +181,35 @@ function newGame() {
 
 ## project 5 solutions
 
+```javascript
+const insert = document.getElementById('insert');
+
+window.addEventListener('keydown', (e) => {
+  insert.innerHTML = `
+    <div class='color'>
+      <table>
+        <tr>
+          <th>Key</th>
+          <th>Keycode</th>
+          <th>Code</th>
+        </tr>
+        <tr>
+          <td>${e.key === ' ' ? 'space' : e.key}</td>
+          <td>${e.keyCode}</td>
+          <td>${e.code}</td>
+        </tr>
+      </table>
+    </div>
+  `;
+});
+
+
 ```
+
+
+## project 6 solutions
+
+```javascript
 
 // generate a random color
 
